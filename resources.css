@@ -214,6 +214,10 @@
     margin: 5px 0; 
 }
 
+.resourcesFound h2 {
+    padding-left: 10px;
+}
+
 .resourcesFound .box button{
     margin: 10px;
     background-color: white;
