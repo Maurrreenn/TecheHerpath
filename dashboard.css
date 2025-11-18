@@ -11,7 +11,7 @@ body {
 
 .container {
     display: flex;
-    height: auto;
+    height: 200px;
 }
 
 
