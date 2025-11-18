@@ -149,8 +149,7 @@ body {
 
 /* ============= MAIN CONTENT ============= */
 .main {
-    margin:auto;
-    width: 100%;
+    flex: 1;
     padding: 20px 40px;
 }
 
@@ -232,6 +231,7 @@ h3 {
 
 /* WELCOME AREA */
 .welcome {
+    height: auto;
     text-align: center;
     background: #ffffff;
     padding: 30px;
