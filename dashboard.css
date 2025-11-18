@@ -7,7 +7,6 @@
 
 body {
     background: #f7f7fb;
-    height: 200px;
 }
 
 .container {
@@ -341,6 +340,9 @@ h3 {
 
 /* RESPONSIVE: Desktop (≥768px) */
 @media (min-width: 768px) {
+  .site-footer {
+      margin-top:250px;
+  }
   .footer-inner {
     flex-direction: row;
     justify-content: space-between;
