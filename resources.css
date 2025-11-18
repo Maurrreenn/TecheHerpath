@@ -139,6 +139,9 @@
 }
 .mobile-menu .nav-link:last-child { border-bottom: none; }
 
+.header-padding-content {
+    margin-top: 15px;
+}
 .features{
     margin: 4rem 0; 
 }
