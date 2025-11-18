@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find Your Mentor</title>
+  <link rel="stylesheet" href="findmentor.css" />
+</head>
+<body>
+
+  <!-- DESKTOP SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="nav-links">
+      <a href="#" class="nav-link active">Dashboard</a>
+      <a href="#" class="nav-link">Career Roadmap</a>
+      <a href="#" class="nav-link">Find Mentors</a>
+      <a href="#" class="nav-link">Resources</a>
+      <a href="#" class="nav-link">Career Quiz</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-wrapper">
+
+    <!-- Header -->
+    <header class="header">
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="logo"><img src="image/websitelogo.png" alt="Logo" width="60px"></div>
+      <div class="profile"><img src="image/profile.png" alt="profile" width="60px"></div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-links">
+          <a href="#" class="nav-link active">Dashboard</a>
+          <a href="#" class="nav-link">Career Roadmap</a>
+          <a href="#" class="nav-link">Find Mentors</a>
+          <a href="#" class="nav-link">Resources</a>
+          <a href="#" class="nav-link">Career Quiz</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-intro">
+        <img src="image/Heropageicon.png" width="70px">
+        <h1>Find Your Mentor</h1>
+      </div>
+      <p>Connect with experienced professionals who can guide you on your tech journey.</p>
+    </section>
+
+    <!-- Track -->
+    <section class="track-section">
+    <label for="trackSelect">Choose a Track:</label>
+    <select id="trackSelect">
+      <option value="">Loading tracks...</option>
+    </select>
+  </section>
+    
+<!-- Search & Filters -->
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search by name, title, or expertise..." />
+      <div class="filters">
+        <select id="expertiseFilter"><option value="">All Expertise</option></select>
+        <!-- REMOVED: availabilityFilter -->
+      </div>
+    </section>
+
+    <!-- MENTOR CARD TEMPLATE (WhatsApp link in HTML) -->
+    <template id="mentorTemplate">
+      <div class="mentor-card">
+        <div class="mentor-header">
+          <img class="mentor-img" src="" alt="Mentor Photo">
+        </div>
+        <div class="mentor-info">
+            <h3 class="mentor-name"></h3>
+            <p class="expertise"></p>
+            <p class="bio"></p>
+            <p class="availability"></p>
+        <!-- WhatsApp link directly in HTML -->
+            <a href="https://chat.whatsapp.com/IKy4FmR4Pg5IoVSPvMjjvK" 
+               class="btn-whatsapp" 
+               target="_blank">
+            <button>Join Track Group</button>
+            </a>
+       </div>
+       </div>
+    </template>
+
+    <!-- MENTORS LIST -->
+    <section id="mentorsList" class="mentors-list"></section>
+
+  </div>
+
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">TechHerPath</span>
+      <p class="footer-tagline">
+        Empowering women to navigate their tech careers with confidence, clarity, and community support.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Career Paths</a></li>
+        <li><a href="#">Find Mentors</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Mission</h3>
+      <p>
+        Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.
+      </p>
+    </div>
+  </div>
+  <p class="footer-copyright">
+      © 2025 TechHerPath. Empowering women in technology, one path at a time.
+    </p>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="techtracks.js"></script>
+  <script src="findmentor.js"></script>
+</body>
+</html>
