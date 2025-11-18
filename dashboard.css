@@ -7,11 +7,11 @@
 
 body {
     background: #f7f7fb;
+    height: 200px;
 }
 
 .container {
     display: flex;
-    height: 200px;
 }
 
 
