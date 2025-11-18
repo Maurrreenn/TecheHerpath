@@ -151,7 +151,6 @@ body {
 .main {
     margin:auto;
     width: 100%;
-    flex: 1;
     padding: 20px 40px;
 }
 
