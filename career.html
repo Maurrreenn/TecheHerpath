@@ -4,57 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="career.css">
     <link href="https://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
     <title>Career Roadmap - TechHerPath</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <!-- <button class="menu-toggle" id="menuToggle">☰</button> -->
-                <div><img class="logo-icon" src="./images/logo-icon.png" alt="Logo-icon"></div>
-                <h1>TechHerPath</h1>
-            </div>
-            <div class="user-profile">
-                <div><img class="profile-icon" src="./images/Profile-icon.png" alt="Profile-icon"></div>
-            </div>
-        </div>
+    <!-- DESKTOP SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
+      <a href="findmentors.html" class="nav-link">Find Mentors</a>
+      <a href="resources" class="nav-link">Resources</a>
     </nav>
+  </aside>
 
-    <!-- Sidebar -->
-    <!-- <aside class="sidebar" id="sidebar">
-        <div class="nav-links">
-            <ul>
-                <li>
-                    <a href="#">
-                        <div class="nav-icon">📊</div>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="active">
-                        <div class="nav-icon">🗺️</div>
-                        <span>Career Roadmap</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="nav-icon">👥</div>
-                        <span>Find Mentors</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="nav-icon">📚</div>
-                        <span>Resources</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </aside> -->
+  <!-- Navigation Menu -->
+    <header class="header">
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="logo"><img src="websitelogo.png" alt="Logo" width="60px"></div>
+      <div class="profile"><img src="profile.png" alt="profile" width="60px"></div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="dashboard.html" class="nav-link">Dashboard</a>
+          <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
+          <a href="findmentors.html" class="nav-link">Find Mentors</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+        </nav>
+      </div>
+    </header>
 
     <!-- Main Content -->
     <div class="container" id="mainContent">
@@ -89,32 +74,42 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <!-- <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h2>TechHerPath</h2>
-                <p>Empowering women to navigate their tech careers with confidence, clarity, and community support.</p>
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Career Paths</a></li>
-                    <li><a href="#">Find Mentors</a></li>
-                    <li><a href="#">Resources</a></li>
-                </ul>
-            </div>
-            <div class="footer-mission">
-                <h3>Mission</h3>
-                <p>Aligned with SDG Goal 4 Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.</p>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 TechHerPath. All rights reserved.</p>
-        </div>
-    </footer> -->
+    <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">TechHerPath</span>
+      <p class="footer-tagline">
+        Empowering women to navigate their tech careers with confidence, clarity, and community support.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="career-roadmap.html">Career Paths</a></li>
+        <li><a href="findmentors.html">Find Mentors</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Mission</h3>
+      <p>
+        Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.
+      </p>
+    </div>
+  </div>
+  <p class="footer-copyright">
+      © 2025 TechHerPath. Empowering women in technology, one path at a time.
+    </p>
+</footer>
     <script src="career.js"></script>
+    <script src="responsive.js"></script>
+    
 </body>
+
 
 </html>
