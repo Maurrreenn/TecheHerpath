@@ -341,7 +341,7 @@ h3 {
 /* RESPONSIVE: Desktop (≥768px) */
 @media (min-width: 768px) {
   .site-footer {
-      margin-top:650px;
+      margin-top:700px;
   }
   .footer-inner {
     flex-direction: row;
