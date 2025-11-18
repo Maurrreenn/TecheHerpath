@@ -15,25 +15,37 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">THP</div>
-                    <div class="logo-text">TechHerPath</div>
-                </div>
-                 <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="career-roadmap.html">Career Roadmap</a></li>
-                        <li><a href="findmentors.html">Fibd Mentor</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                    </ul>
-                </nav> 
-            </div>
-        </div>
+      <!-- DESKTOP SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
+      <a href="findmentors.html" class="nav-link">Find Mentors</a>
+      <a href="resources" class="nav-link">Resources</a>
+    </nav>
+  </aside>
+
+    <!-- Header -->
+    <header class="header">
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="logo"><img src="websitelogo.png" alt="Logo" width="60px"></div>
+      <div class="profile"><img src="profile.png" alt="profile" width="60px"></div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-links">
+          <a href="#" class="nav-link active">Career Quiz</a>
+          <a href="dashboard.html" class="nav-link">Dashboard</a>
+          <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
+          <a href="findmentors.html" class="nav-link">Find Mentors</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+        </nav>
+      </div>
     </header>
+
 
     <!-- Main Content -->
     <main class="main-content">
