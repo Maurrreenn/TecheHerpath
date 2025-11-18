@@ -11,30 +11,39 @@
 
 <div class="container">
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <div class="logo"> <img src="images/Logo (2).png" class="sidebar-logo">  TechHerPath </div>
-
-        <ul class="menu">
-           <li class="active"> <span class="left"><i class="fas fa-home"></i> <span class="text">Dashboard </span> </span> <i class="fas fa-arrow-right"></i> </li>
-            <li> <span class="left"> <i class="fas fa-route"></i> <span class="text"> Career Roadmap </span> </span><i class="fas fa-arrow-right"> </i></li>
-            <li> <span class="left"> <i class="fas fa-user-friends"> <span class="text"> </i> Mentorship </span> </span> <i class="fas fa-arrow-right"> </i></li>
-            <li> <span class="left"> <i class="fas fa-book"></i> <span class="text"> Resources </span> </span> <i class="fas fa-arrow-right"> </i></li>
-            <li> <span class="left"> <i class="fas fa-user"></i> <span class="text"> Profile </span> </span> <i class="fas fa-arrow-right"> </i></li>
-            <li> <span class="left"> <i class="fas fa-cog"></i> <span class="text"> Settings </span> </span> <i class="fas fa-arrow-right"></i></li>
-        </ul>
-    </aside>
+    <!-- DESKTOP SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
+      <a href="findmentors.html" class="nav-link">Find Mentors</a>
+      <a href="resources" class="nav-link">Resources</a>
+    </nav>
+  </aside>
 
     <!-- MAIN CONTENT -->
     <main class="main">
 
-        <!-- TOP BAR -->
-        <header class="top-bar">
-            <input type="text" class="search" placeholder="Search">
-            <div class="profile">
-                <img src="images/Profile.jpeg" alt="">
-            </div>
-        </header>
+        <!-- Header -->
+    <header class="header">
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="logo"><img src="websitelogo.png" alt="Logo" width="60px"></div>
+      <div class="profile"><img src="profile.png" alt="profile" width="60px"></div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="dashboard.html" class="nav-link">Dashboard</a>
+          <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
+          <a href="findmentors.html" class="nav-link">Find Mentors</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+        </nav>
+      </div>
+    </header>
 
         <!-- GREETING -->
         <section class="greeting">
@@ -100,44 +109,43 @@
             <button class="btn">Take Career Assessment <i class="fas fa-arrow-right" style="padding-left: 15px;"> </i></button>
         </section>
 
-        <!-- FOOTER -->
-        <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-info">
-                <h3 style="color: #fff;">TechHerPath</h3>
-                <p style="color: #fff; margin-top: 15px; margin-bottom: 15px;" >Empowering women in technology through mentorship, guidance, and community support.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter" style="color: #fff;"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in" style="color: #fff;"></i></a>
-                    <a href="#"><i class="fas fa-envelope" style="color: #fff;"></i></a>
-                </div>
-            </div>
-            <div class="footer-links-group">
-                <h3 style="color: #fff;">Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#dashboard">Dashboard</a></li>
-                    <li><a href="#roadmaps">Career Roadmaps</a></li>
-                    <li><a href="#mentorship">Find a Mentor</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                </ul>
-            </div>
-            <div class="mission-info">
-                <h3 style="color: #fff;">Mission</h3>
-                <ul>
-                    <p style="margin-top: 15px; color: #fff;">Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.</p>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>© 2025 TechHerPath. Made with <i class="fas fa-heart"></i> for women in tech.</p>
-            <p>Supporting UN SDG Goal 4: <span class="sdg-tag">Quality Education</span></p>
-        </div>
-    </footer>
-    </main>
+          <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">TechHerPath</span>
+      <p class="footer-tagline">
+        Empowering women to navigate their tech careers with confidence, clarity, and community support.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="career-roadmap.html">Career Paths</a></li>
+        <li><a href="findmentors.html">Find Mentors</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Mission</h3>
+      <p>
+        Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.
+      </p>
+    </div>
+   </div>
+     <p class="footer-copyright">
+      © 2025 TechHerPath. Empowering women in technology, one path at a time.
+     </p>
+   </footer>
+</main>
 
 </div>
 
 <script src="dashboard.js"></script>
+<script src="responsive.js"></script>
 </body>
 </html>
