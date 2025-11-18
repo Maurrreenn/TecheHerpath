@@ -6,14 +6,14 @@ const TRACKS = {
       expertise: "frontend", 
       bio: "React & TypeScript", 
       workdays: ["Mon", "Tue", "Wed", "Thu", "Fri"],
-      image: "image/mentor 1.png"
+      image: "mentor 1.png"
     },
     { 
       name: "Ben Carter", 
       expertise: "frontend", 
       bio: "Vue Expert", 
       workdays: ["Wed", "Sat"],
-      image: "image/mentor 2.jpg"
+      image: "mentor 2.jpg"
     }
   ],
   backend: [
@@ -22,7 +22,7 @@ const TRACKS = {
       expertise: "backend", 
       bio: "Node.js & GraphQL", 
       workdays: ["Mon", "Fri"],
-      image: "image/mentor 3.jpg"
+      image: "mentor 3.jpg"
     }
   ],
   dataScience: [
@@ -31,7 +31,7 @@ const TRACKS = {
       expertise: "data", 
       bio: "ML Engineer", 
       workdays: ["Tue", "Thu"], 
-      image: "image/mentor 4.jpg" 
+      image: "mentor 4.jpg" 
     }
   ],
   devops: [
@@ -40,7 +40,7 @@ const TRACKS = {
       expertise: "devops", 
       bio: "AWS & Terraform", 
       workdays: ["Mon", "Wed", "Fri"], 
-      image: "image/mentor 9.jpg" 
+      image: "mentor 9.jpg" 
     }
   ],
   mobile: [
@@ -49,7 +49,7 @@ const TRACKS = {
       expertise: "mobile", 
       bio: "Flutter Dev", 
       workdays: ["Sat", "Sun"], 
-      image: "image/mentor 6.jpg" 
+      image: "mentor 6.jpg" 
     }
   ],
   security: [
@@ -58,7 +58,7 @@ const TRACKS = {
       expertise: "security", 
       bio: "Penetration Tester", 
       workdays: ["Mon"], 
-      image: "image/mentor 7.jpg" 
+      image: "mentor 7.jpg" 
     }
   ],
   cloud: [
@@ -67,7 +67,7 @@ const TRACKS = {
       expertise: "cloud", 
       bio: "Azure Architect", 
       workdays: ["Tue", "Wed", "Thu", "Fri"], 
-      image: "image/mentor 8.jpg" 
+      image: "mentor 8.jpg" 
     }
   ],
   ai: [
@@ -76,7 +76,7 @@ const TRACKS = {
       expertise: "ai", 
       bio: "LLM Specialist", 
       workdays: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], 
-      image: "image/mentor 9.jpg" 
+      image: "mentor 9.jpg" 
     }
   ],
   product: [
@@ -85,7 +85,7 @@ const TRACKS = {
       expertise: "product", 
       bio: "Technical PM", 
       workdays: ["Wed", "Thu"], 
-      image: "image/mentor 2.jpg" 
+      image: "mentor 2.jpg" 
     }
   ],
   design: [
@@ -94,7 +94,7 @@ const TRACKS = {
       expertise: "design", 
       bio: "UX Researcher", 
       workdays: ["Fri", "Sat"], 
-      image: "image/mentor 3.jpg" 
+      image: "mentor 3.jpg" 
     }
   ]
 };
