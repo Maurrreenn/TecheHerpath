@@ -297,11 +297,13 @@ h3 {
 
 .footer-section {
   text-align: center;
+  color: white;
 }
 .footer-section h3 {
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
   font-weight: 600;
+    color: white;
 }
 .footer-section ul {
   list-style: none;
@@ -344,6 +346,7 @@ h3 {
     align-items: flex-start;
     text-align: left;
     gap: 2rem;
+    color: white;
   }
   .footer-brand {
     flex: 1;
