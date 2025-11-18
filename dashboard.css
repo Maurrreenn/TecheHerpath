@@ -149,34 +149,16 @@ body {
 
 /* ============= MAIN CONTENT ============= */
 .main {
+    margin:auto;
+    width: 100%;
     flex: 1;
     padding: 20px 40px;
 }
 
-/* TOP BAR */
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-.search {
-    width: 90%;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-}
-
-.profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    
-}
 
 /* GREETING SECTION */
 .greeting {
+    margin-top: 20px;
     background: #ffffff;
     padding: 25px;
     border-radius: 15px;
