@@ -311,6 +311,9 @@
 
 /* RESPONSIVE: Desktop (≥768px) */
 @media (min-width: 768px) {
+  .site-footer {
+      margin-top: 670px;
+  }
   .footer-inner {
     flex-direction: row;
     justify-content: space-between;
