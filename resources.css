@@ -144,7 +144,6 @@
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
     padding: 20px 20px;
-    gap: 2px;
     font-weight: 500;
 }
 .features{
@@ -205,7 +204,7 @@
     background-color: white;
     box-shadow: 0 1px 5px gray;
     margin: 1.5rem 0;
-    padding: 5rem;
+    padding: 6rem 5rem;
     text-align: center;
     border-radius: 20px;
     line-height: 30px;
