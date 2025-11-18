@@ -201,7 +201,7 @@
         .header {
             text-align: center;
             margin-bottom: 40px;
-            color: transparent;
+            color: white;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #48bb78 100%);
         }
 
@@ -601,5 +601,6 @@
     text-align: center;
   }
 }
+
 
 
