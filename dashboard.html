@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHerPath Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo"> <img src="images/Logo (2).png" class="sidebar-logo">  TechHerPath </div>
+
+        <ul class="menu">
+           <li class="active"> <span class="left"><i class="fas fa-home"></i> <span class="text">Dashboard </span> </span> <i class="fas fa-arrow-right"></i> </li>
+            <li> <span class="left"> <i class="fas fa-route"></i> <span class="text"> Career Roadmap </span> </span><i class="fas fa-arrow-right"> </i></li>
+            <li> <span class="left"> <i class="fas fa-user-friends"> <span class="text"> </i> Mentorship </span> </span> <i class="fas fa-arrow-right"> </i></li>
+            <li> <span class="left"> <i class="fas fa-book"></i> <span class="text"> Resources </span> </span> <i class="fas fa-arrow-right"> </i></li>
+            <li> <span class="left"> <i class="fas fa-user"></i> <span class="text"> Profile </span> </span> <i class="fas fa-arrow-right"> </i></li>
+            <li> <span class="left"> <i class="fas fa-cog"></i> <span class="text"> Settings </span> </span> <i class="fas fa-arrow-right"></i></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <input type="text" class="search" placeholder="Search">
+            <div class="profile">
+                <img src="images/Profile.jpeg" alt="">
+            </div>
+        </header>
+
+        <!-- GREETING -->
+        <section class="greeting">
+            <div class="text">
+                <h2>Good afternoon, <span id="userName">Mariam</span>🎉</h2>
+                <p style="margin-top:20px; margin-bottom: 20px;">Ready to start your tech career journey? Let’s find the perfect path for you.</p>
+                 <button class="btn">Take Career Assessment <i class="fas fa-arrow-right" style="padding-left: 15px;"> </i></button>
+            </div>
+            <img src="images/Hero img.png" alt="" class="greet-img">
+
+        </section>
+
+        <!-- STATS CARDS -->
+         <div class="card-container">
+    
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-ellipsis-vertical more"></i>
+      </div>
+      <h3>Current Goal</h3>
+      <p class="sub">Front End Developer</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fa-solid fa-chart-line"></i>
+        <i class="fa-solid fa-ellipsis-vertical more"></i>
+      </div>
+      <h3>Road Map Progress</h3>
+      <p class="sub">40% Completed</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fa-solid fa-calendar"></i>
+        <i class="fa-solid fa-ellipsis-vertical more"></i>
+      </div>
+      <h3>Next Mentorship</h3>
+      <p class="sub">Tomorrow at 10:00am</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fa-solid fa-book-open"></i>
+        <i class="fa-solid fa-ellipsis-vertical more"></i>
+      </div>
+      <h3>Recommended Resources</h3>
+      <p class="sub">Front End Developer</p>
+    </div>
+
+  </div>
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome">
+             <img src="images/Logo (2).png" class="logo-welcome">
+            <h2 style="color: black;">Welcome to TechHerPath! 🎉</h2>
+            <p>Let's start your journey by discovering the perfect tech career path for you. Take our personalized career assessment to get matched with the best opportunities.</p>
+            <button class="btn">Take Career Assessment <i class="fas fa-arrow-right" style="padding-left: 15px;"> </i></button>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3 style="color: #fff;">TechHerPath</h3>
+                <p style="color: #fff; margin-top: 15px; margin-bottom: 15px;" >Empowering women in technology through mentorship, guidance, and community support.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter" style="color: #fff;"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in" style="color: #fff;"></i></a>
+                    <a href="#"><i class="fas fa-envelope" style="color: #fff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-group">
+                <h3 style="color: #fff;">Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#roadmaps">Career Roadmaps</a></li>
+                    <li><a href="#mentorship">Find a Mentor</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+            <div class="mission-info">
+                <h3 style="color: #fff;">Mission</h3>
+                <ul>
+                    <p style="margin-top: 15px; color: #fff;">Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2025 TechHerPath. Made with <i class="fas fa-heart"></i> for women in tech.</p>
+            <p>Supporting UN SDG Goal 4: <span class="sdg-tag">Quality Education</span></p>
+        </div>
+    </footer>
+    </main>
+
+</div>
+
+<script src="name.js"></script>
+</body>
+</html>
