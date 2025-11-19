@@ -459,6 +459,9 @@ h1, h2, h3 {
     }
     
     /* CTA Buttons Mobile */
+    .navbar {
+        justify-content: space-between;
+    }
     .cta-buttons {
         flex-direction: column;
         gap: 15px;
