@@ -144,9 +144,9 @@ body {
     text-align: center;
 }
 
-.top-icon img {
+/*.top-icon img {
     width: 100px;
-}
+}*/
 
 h1 {
     font-size: 32px;
@@ -395,4 +395,5 @@ button:disabled {
     text-align: center;
   }
     }
+
 
