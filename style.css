@@ -459,10 +459,7 @@ h1, h2, h3 {
     }
     
     /* CTA Buttons Mobile */
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-    }
+    
     .cta-buttons {
         flex-direction: column;
         gap: 15px;
@@ -505,10 +502,7 @@ h1, h2, h3 {
 }
 
 @media (max-width: 600px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-    }
+    
     .testimonial-grid {
         overflow-x: scroll; 
         grid-template-columns: repeat(3, 90%); 
