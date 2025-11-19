@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Assessment</title>
+    <link rel="stylesheet" href="assessment.css">
+</head>
+<body>
+
+<div id="assessment-screen" class="assessment-container">
+
+    <div class="top-icon">
+        <img src="Images/Logo (2).png" alt="icon">
+    </div>
+
+    <h1>Career Path Assessment</h1>
+    <p class="subtitle">Answer a few questions to discover your ideal tech career</p>
+
+    <div class="card">
+
+        <div class="progress-header">
+            <span id="questionNumber">Question 1 of 4</span>
+            <span id="progressText" class="purple">0% Complete</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+
+        <h2 id="questionText"></h2>
+        <div id="optionsContainer"></div>
+
+        <div class="nav-buttons">
+            <button class="btn" id="prevBtn" disabled>Previous</button>
+            <button class="btn" id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <p id="statusText" class="status-message">0 questions answered</p>
+</div>
+
+
+
+<!-- ANALYZING SCREEN -->
+<div id="analyzing-screen" class="analyzing-container" style="display:none;">
+    <div class="card">
+        <div class="loader"></div>
+        <h2>Analyzing your responses...</h2>
+        <p>Matching you with the perfect tech career paths.</p>
+    </div>
+</div>
+
+
+<!-- RESULT SCREEN -->
+<div id="result-screen" class="result-container" style="display:none;">
+
+    <div class="result-card">
+        <h1>Your Career Matches! 🎉</h1>
+        <p>
+            Based on your responses, here are the tech careers that align 
+            perfectly with your interests and strengths.
+        </p>
+    </div>
+
+    <div class="matches">
+        <div class="match-item"> UI/UX Designer</div>
+        <div class="match-item"> Frontend Developer</div>
+        <div class="match-item"> Data Analyst</div>
+    </div>
+
+    <div class="footer-note">
+        <h3>Want to explore more?</h3>
+        <p>
+            These are your top matches, but you can always explore other career 
+            paths on your dashboard.
+        </p>
+    </div>
+
+</div>
+
+<script src="assessment.js"></script>
+</body>
+</html>
