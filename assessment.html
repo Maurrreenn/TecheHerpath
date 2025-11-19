@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Path Assessment</title>
-    <link rel="stylesheet" href="assessment.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Path Assessment</title>
+  <link rel="stylesheet" href="assessment.css">
 </head>
+
 <body>
 
-   <!-- DESKTOP SIDEBAR -->
+  <!-- DESKTOP SIDEBAR -->
   <aside class="sidebar" id="sidebar">
     <nav class="nav-links">
       <a href="index.html" class="nav-link active">Home</a>
       <a href="dashboard.html" class="nav-link">Dashboard</a>
       <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
       <a href="findmentors.html" class="nav-link">Find Mentors</a>
-      <a href="resources" class="nav-link">Resources</a>
+      <a href="resources.html" class="nav-link">Resources</a>
       <a href="assessment.html" class="nav-link">Career Assessment</a>
-      <a href="loginsignin.html" class="nav-link">Sign Out</a> 
+      <a href="loginsignin.html" class="nav-link">Sign Out</a>
     </nav>
   </aside>
 
-    <!-- Header -->
-    <header class="header">
-      <button class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="logo"><img src="websitelogo.png" alt="Logo" width="60px"></div>
-      <div class="profile"><img src="profile.png" alt="profile" width="60px"></div>
+  <!-- Header -->
+  <header class="header">
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="logo">
+      <p class="gradient-text">TechHerPath</p>
+    </div>
+    <div class="profile"><img src="profile.png" alt="profile" width="60px"></div>
 
-      <!-- Mobile Menu -->
-      <div class="mobile-menu" id="mobileMenu">
-        <nav class="nav-links">
-          <a href="index.html" class="nav-link active">Home</a>
-          <a href="dashboard.html" class="nav-link">Dashboard</a>
-          <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
-          <a href="findmentors.html" class="nav-link">Find Mentors</a>
-          <a href="resources.html" class="nav-link">Resources</a>
-          <a href="assessment.html" class="nav-link">Career Assessment</a>
-          <a href="loginsignin.html" class="nav-link">Sign Out</a> 
-        </nav>
-      </div>
-    </header>
-    
-   <div id="assessment-screen" class="assessment-container">
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="career-roadmap.html" class="nav-link">Career Roadmap</a>
+        <a href="findmentors.html" class="nav-link">Find Mentors</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="assessment.html" class="nav-link">Career Assessment</a>
+        <a href="loginsignin.html" class="nav-link">Sign Out</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="assessment-screen" class="assessment-container">
 
     <div class="top-icon">
-        <img src="Logo (2).png" alt="icon">
+      <p class="gradient-text">TechHerPath</p>
     </div>
 
     <h1>Career Path Assessment</h1>
@@ -54,103 +58,102 @@
 
     <div class="card">
 
-        <div class="progress-header">
-            <span id="questionNumber">Question 1 of 4</span>
-            <span id="progressText" class="purple">0% Complete</span>
-        </div>
+      <div class="progress-header">
+        <span id="questionNumber">Question 1 of 4</span>
+        <span id="progressText" class="purple">0% Complete</span>
+      </div>
 
-        <div class="progress-bar">
-            <div id="progressFill"></div>
-        </div>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
 
-        <h2 id="questionText"></h2>
-        <div id="optionsContainer"></div>
+      <h2 id="questionText"></h2>
+      <div id="optionsContainer"></div>
 
-        <div class="nav-buttons">
-            <button class="btn" id="prevBtn" disabled>Previous</button>
-            <button class="btn" id="nextBtn">Next</button>
-        </div>
+      <div class="nav-buttons">
+        <button class="btn" id="prevBtn" disabled>Previous</button>
+        <button class="btn" id="nextBtn">Next</button>
+      </div>
     </div>
 
     <p id="statusText" class="status-message">0 questions answered</p>
-</div>
+  </div>
 
 
 
-<!-- ANALYZING SCREEN -->
-<div id="analyzing-screen" class="analyzing-container" style="display:none;">
+  <!-- ANALYZING SCREEN -->
+  <div id="analyzing-screen" class="analyzing-container" style="display:none;">
     <div class="card">
-        <div class="loader"></div>
-        <h2>Analyzing your responses...</h2>
-        <p>Matching you with the perfect tech career paths.</p>
+      <div class="loader"></div>
+      <h2>Analyzing your responses...</h2>
+      <p>Matching you with the perfect tech career paths.</p>
     </div>
-</div>
+  </div>
 
 
-<!-- RESULT SCREEN -->
-<div id="result-screen" class="result-container" style="display:none;">
+  <!-- RESULT SCREEN -->
+  <div id="result-screen" class="result-container" style="display:none;">
 
     <div class="result-card">
-        <h1>Your Career Matches! 🎉</h1>
-        <p>
-            Based on your responses, here are the tech careers that align 
-            perfectly with your interests and strengths.
-        </p>
+      <h1>Your Career Matches! 🎉</h1>
+      <p>
+        Based on your responses, here are the tech careers that align
+        perfectly with your interests and strengths.
+      </p>
     </div>
 
     <div class="matches">
-        <div class="match-item"> UI/UX Designer</div>
-        <div class="match-item"> Frontend Developer</div>
-        <div class="match-item"> Data Analyst</div>
+      <div class="match-item"> UI/UX Designer</div>
+      <div class="match-item"> Frontend Developer</div>
+      <div class="match-item"> Data Analyst</div>
     </div>
 
     <div class="footer-note">
-        <h3>Want to explore more?</h3>
-        <p>
-            These are your top matches, but you can always explore other career 
-            paths on your dashboard.
-        </p>
-    </div>
-
-</div>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="footer-logo">TechHerPath</span>
-      <p class="footer-tagline">
-        Empowering women to navigate their tech careers with confidence, clarity, and community support.
-      </p>
-    </div>
-
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="career-roadmap.html">Career Paths</a></li>
-        <li><a href="findmentors.html">Find Mentors</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="assessment.html" class="nav-link">Career Assessment</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <h3>Mission</h3>
+      <h3>Want to explore more?</h3>
       <p>
-        Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.
+        These are your top matches, but you can always explore other career
+        paths on your dashboard.
       </p>
     </div>
+
   </div>
-  <p class="footer-copyright">
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">TechHerPath</span>
+        <p class="footer-tagline">
+          Empowering women to navigate their tech careers with confidence, clarity, and community support.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="career-roadmap.html">Career Paths</a></li>
+          <li><a href="findmentors.html">Find Mentors</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="assessment.html" class="nav-link">Career Assessment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Mission</h3>
+        <p>
+          Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and
+          equitable tech education.
+        </p>
+      </div>
+    </div>
+    <p class="footer-copyright">
       © 2025 TechHerPath. Empowering women in technology, one path at a time.
     </p>
-</footer>
-<script src="responsive.js"></script>
-<script src="assessment.js"></script>
+  </footer>
+  <script src="responsive.js"></script>
+  <script src="assessment.js"></script>
 </body>
+
 </html>
-
-
-

@@ -1,156 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechHerPath Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechHerPath Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<div class="container">
+  <div class="container">
 
     <!-- DESKTOP SIDEBAR -->
-  <aside class="sidebar" id="sidebar">
-    <nav class="nav-links">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="#" class="nav-link">Dashboard</a>
-      <a href="career.html" class="nav-link">Career Roadmap</a>
-      <a href="findmentors.html" class="nav-link">Find Mentors</a>
-      <a href="resources" class="nav-link">Resources</a>
-      <a href="assessment.html" class="nav-link">Career Assessment</a>
-      <a href="loginsignin.html" class="nav-link">Sign out</a>
-    </nav>
-  </aside>
+    <aside class="sidebar" id="sidebar">
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">Dashboard</a>
+        <a href="career.html" class="nav-link">Career Roadmap</a>
+        <a href="findmentors.html" class="nav-link">Find Mentors</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="assessment.html" class="nav-link">Career Assessment</a>
+        <a href="loginsignin.html" class="nav-link">Sign out</a>
+      </nav>
+    </aside>
+
 
     <!-- MAIN CONTENT -->
     <main class="main">
 
-        <!-- Header -->
-    <header class="header">
-      <button class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="logo"><img src="websitelogo.png" alt="Logo" width="60px"></div>
-      <div class="profile"><img src="profile.png" alt="profile" width="60px"></div>
+      <!-- Header -->
+      <header class="header">
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="logo">
+          <!-- <img src="logo.png" alt="logo" class="logo"> -->
+          <p class="gradient-text">TechHerPath</p>
+        </div>
+        <div class="profile"><img src="profile.png" alt="profile" width="60px"></div>
 
-      <!-- Mobile Menu -->
-      <div class="mobile-menu" id="mobileMenu">
-        <nav class="nav-links">
-          <a href="index.html" class="nav-link active">Home</a>
-          <a href="#" class="nav-link">Dashboard</a>
-          <a href="career.html" class="nav-link">Career Roadmap</a>
-          <a href="findmentors.html" class="nav-link">Find Mentors</a>
-          <a href="resources.html" class="nav-link">Resources</a>
-          <a href="assessment.html" class="nav-link">Career Assessment</a>
-          <a href="loginsignin.html" class="nav-link">Sign out</a>
-        </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+          <nav class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">Dashboard</a>
+            <a href="career.html" class="nav-link">Career Roadmap</a>
+            <a href="findmentors.html" class="nav-link">Find Mentors</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="assessment.html" class="nav-link">Career Assessment</a>
+            <a href="loginsignin.html" class="nav-link">Sign out</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- GREETING -->
+      <section class="greeting">
+        <div class="text">
+          <h2>Good afternoon, <span id="userName">Mariam</span>🎉</h2>
+          <p style="margin-top:20px; margin-bottom: 20px;">Ready to start your tech career journey? Let’s find the
+            perfect path for you.</p>
+          <button class="btn">Take Career Assessment <a href="assessment.html"><i class="fas fa-arrow-right"
+                style="padding-left: 15px;"></i></a></button>
+        </div>
+        <img src="images/Hero img.png" alt="" class="greet-img">
+
+      </section>
+
+      <!-- STATS CARDS -->
+      <div class="card-container">
+
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-user-group"></i>
+            <i class="fa-solid fa-ellipsis-vertical more"></i>
+          </div>
+          <h3>Current Goal</h3>
+          <p class="sub">Front End Developer</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-chart-line"></i>
+            <i class="fa-solid fa-ellipsis-vertical more"></i>
+          </div>
+          <h3>Road Map Progress</h3>
+          <p class="sub">40% Completed</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-calendar"></i>
+            <i class="fa-solid fa-ellipsis-vertical more"></i>
+          </div>
+          <h3>Next Mentorship</h3>
+          <p class="sub">Tomorrow at 10:00am</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-book-open"></i>
+            <i class="fa-solid fa-ellipsis-vertical more"></i>
+          </div>
+          <h3>Recommended Resources</h3>
+          <p class="sub">Front End Developer</p>
+        </div>
+
       </div>
-    </header>
 
-        <!-- GREETING -->
-        <section class="greeting">
-            <div class="text">
-                <h2>Good afternoon, <span id="userName">Mariam</span>🎉</h2>
-                <p style="margin-top:20px; margin-bottom: 20px;">Ready to start your tech career journey? Let’s find the perfect path for you.</p>
-                 <button class="btn">Take Career Assessment <a href="assessment.html"><i class="fas fa-arrow-right" style="padding-left: 15px;"></i></a></button>
-            </div>
-            <img src="images/Hero img.png" alt="" class="greet-img">
-
-        </section>
-
-        <!-- STATS CARDS -->
-         <div class="card-container">
-    
-    <!-- Card 1 -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fa-solid fa-user-group"></i>
-        <i class="fa-solid fa-ellipsis-vertical more"></i>
-      </div>
-      <h3>Current Goal</h3>
-      <p class="sub">Front End Developer</p>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fa-solid fa-chart-line"></i>
-        <i class="fa-solid fa-ellipsis-vertical more"></i>
-      </div>
-      <h3>Road Map Progress</h3>
-      <p class="sub">40% Completed</p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fa-solid fa-calendar"></i>
-        <i class="fa-solid fa-ellipsis-vertical more"></i>
-      </div>
-      <h3>Next Mentorship</h3>
-      <p class="sub">Tomorrow at 10:00am</p>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card">
-      <div class="card-header">
-        <i class="fa-solid fa-book-open"></i>
-        <i class="fa-solid fa-ellipsis-vertical more"></i>
-      </div>
-      <h3>Recommended Resources</h3>
-      <p class="sub">Front End Developer</p>
-    </div>
-
+      <!-- WELCOME SECTION -->
+      <section class="welcome">
+        <img src="Logo (2).png" class="logo-welcome">
+        <h2 style="color: black;">Welcome to TechHerPath! 🎉</h2>
+        <p>Let's start your journey by discovering the perfect tech career path for you. Take our personalized career
+          assessment to get matched with the best opportunities.</p>
+        <button class="btn">Take Career Assessment <i class="fas fa-arrow-right" style="padding-left: 15px;">
+          </i></button>
+      </section>
+    </main>
   </div>
 
-        <!-- WELCOME SECTION -->
-        <section class="welcome">
-             <img src="Logo (2).png" class="logo-welcome">
-            <h2 style="color: black;">Welcome to TechHerPath! 🎉</h2>
-            <p>Let's start your journey by discovering the perfect tech career path for you. Take our personalized career assessment to get matched with the best opportunities.</p>
-            <button class="btn">Take Career Assessment <i class="fas fa-arrow-right" style="padding-left: 15px;"> </i></button>
-        </section>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">TechHerPath</span>
+        <p class="footer-tagline">
+          Empowering women to navigate their tech careers with confidence, clarity, and community support.
+        </p>
+      </div>
 
-          <!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="footer-logo">TechHerPath</span>
-      <p class="footer-tagline">
-        Empowering women to navigate their tech careers with confidence, clarity, and community support.
-      </p>
-    </div>
 
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="career.html">Career Paths</a></li>
-        <li><a href="findmentors.html">Find Mentors</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="assessment.html" class="nav-link">Career Assessment</a></li>
-      </ul>
-    </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="career.html">Career Paths</a></li>
+          <li><a href="findmentors.html">Find Mentors</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="assessment.html" class="nav-link">Career Assessment</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-section">
-      <h3>Mission</h3>
-      <p>
-        Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.
-      </p>
+
+      <div class="footer-section">
+        <h3>Mission</h3>
+        <p>
+          Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive
+          and equitable tech education.
+        </p>
+
+      </div>
     </div>
-   </div>
-     <p class="footer-copyright">
+    <p class="footer-copyright">
       © 2025 TechHerPath. Empowering women in technology, one path at a time.
-     </p>
-   </footer>
-</main>
+    </p>
 
-</div>
+  </footer>
 
-<script src="dashboard.js"></script>
-<script src="responsive.js"></script>
+
+
+
+  <script src="dashboard.js"></script>
+  <script src="responsive.js"></script>
 </body>
+
 </html>

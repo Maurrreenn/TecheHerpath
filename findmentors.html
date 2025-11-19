@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Find Your Mentor</title>
   <link rel="stylesheet" href="findmentor.css" />
 </head>
+
 <body>
 
   <!-- DESKTOP SIDEBAR -->
@@ -29,7 +31,10 @@
       <button class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
       </button>
-      <div class="logo"><img src="websitelogo.png" alt="Logo" width="60px"></div>
+      <div class="logo">
+        <p class="gradient-text">TechHerPath</p>
+        <!-- <img src="websitelogo.png" alt="Logo" width="60px"> -->
+      </div>
       <div class="profile"><img src="profile.png" alt="profile" width="60px"></div>
 
       <!-- Mobile Menu -->
@@ -42,7 +47,7 @@
           <a href="resources.html" class="nav-link">Resources</a>
           <a href="assessment.html" class="nav-link">Career Assessment</a>
           <a href="loginsignin.html" class="nav-link">Sign out</a>
-    </nav>
+        </nav>
         </nav>
       </div>
     </header>
@@ -58,17 +63,19 @@
 
     <!-- Track -->
     <section class="track-section">
-    <label for="trackSelect">Choose a Track:</label>
-    <select id="trackSelect">
-      <option value="">Loading tracks...</option>
-    </select>
-  </section>
-    
-<!-- Search & Filters -->
+      <label for="trackSelect">Choose a Track:</label>
+      <select id="trackSelect">
+        <option value="">Loading tracks...</option>
+      </select>
+    </section>
+
+    <!-- Search & Filters -->
     <section class="search-section">
       <input type="text" id="searchInput" placeholder="Search by name, title, or expertise..." />
       <div class="filters">
-        <select id="expertiseFilter"><option value="">All Expertise</option></select>
+        <select id="expertiseFilter">
+          <option value="">All Expertise</option>
+        </select>
         <!-- REMOVED: availabilityFilter -->
       </div>
     </section>
@@ -80,18 +87,16 @@
           <img class="mentor-img" src="" alt="Mentor Photo">
         </div>
         <div class="mentor-info">
-            <h3 class="mentor-name"></h3>
-            <p class="expertise"></p>
-            <p class="bio"></p>
-            <p class="availability"></p>
-        <!-- WhatsApp link directly in HTML -->
-            <a href="https://chat.whatsapp.com/IKy4FmR4Pg5IoVSPvMjjvK" 
-               class="btn-whatsapp" 
-               target="_blank">
+          <h3 class="mentor-name"></h3>
+          <p class="expertise"></p>
+          <p class="bio"></p>
+          <p class="availability"></p>
+          <!-- WhatsApp link directly in HTML -->
+          <a href="https://chat.whatsapp.com/IKy4FmR4Pg5IoVSPvMjjvK" class="btn-whatsapp" target="_blank">
             <button>Join Track Group</button>
-            </a>
-       </div>
-       </div>
+          </a>
+        </div>
+      </div>
     </template>
 
     <!-- MENTORS LIST -->
@@ -100,42 +105,44 @@
   </div>
 
   <!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="footer-logo">TechHerPath</span>
-      <p class="footer-tagline">
-        Empowering women to navigate their tech careers with confidence, clarity, and community support.
-      </p>
-    </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">TechHerPath</span>
+        <p class="footer-tagline">
+          Empowering women to navigate their tech careers with confidence, clarity, and community support.
+        </p>
+      </div>
 
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="career.html">Career Paths</a></li>
-        <li><a href="#">Find Mentors</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="assessment.html" class="nav-link">Career Assessment</a></li>
-      </ul>
-    </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="career.html">Career Paths</a></li>
+          <li><a href="#">Find Mentors</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="assessment.html" class="nav-link">Career Assessment</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-section">
-      <h3>Mission</h3>
-      <p>
-        Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and equitable tech education.
-      </p>
+      <div class="footer-section">
+        <h3>Mission</h3>
+        <p>
+          Aligned with SDG Goal 4: Quality Education, we're committed to facilitating women's access to inclusive and
+          equitable tech education.
+        </p>
+      </div>
     </div>
-  </div>
-  <p class="footer-copyright">
+    <p class="footer-copyright">
       © 2025 TechHerPath. Empowering women in technology, one path at a time.
     </p>
-</footer>
+  </footer>
 
 
   <!-- Scripts -->
   <script src="techtracks.js"></script>
   <script src="findmentor.js"></script>
 </body>
+
 </html>

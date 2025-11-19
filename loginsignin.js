@@ -74,12 +74,12 @@ passwordInput.addEventListener('input', function () {
 nextToPage2Btn.addEventListener('click', function () {
     const firstName = document.getElementById('first-name').value.trim();
     const surname = document.getElementById('surname').value.trim();
-    const lastName = document.getElementById('last-name').value.trim();
+    const otherNames = document.getElementById('other-names').value.trim();
     const country = document.getElementById('country').value;
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value;
 
-    if (!firstName || !surname || !lastName || !country || !email || !password) {
+    if (!firstName || !surname || !country || !email || !password) {
         alert('Please fill in all required fields before proceeding.');
         return;
     }
@@ -99,13 +99,48 @@ backToPage1Btn.addEventListener('click', function () {
     signupPage1.classList.add('active');
 });
 
+// // Login Form Submission
+// loginForm.addEventListener('submit', function (e) {
+//     e.preventDefault();
+//     const email = document.getElementById('login-email').value;
+//     const password = document.getElementById('login-password').value;
+//     alert(`Login attempted with:\nEmail: ${email}\nPassword: ${password}`);
+// });
+
 // Login Form Submission
 loginForm.addEventListener('submit', function (e) {
     e.preventDefault();
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
-    alert(`Login attempted with:\nEmail: ${email}\nPassword: ${password}`);
+
+    // For demo purposes, just redirect - in real app you'd validate credentials
+    alert(`Login successful! Welcome back.`);
+    window.location.href = 'dashboard.html';
 });
+
+// Signup Form Submission
+// signupForm.addEventListener('submit', function (e) {
+//     e.preventDefault();
+
+//     const password = document.getElementById('password').value;
+//     if (!validatePassword(password)) {
+//         alert('Password does not meet the required criteria.');
+//         return;
+//     }
+
+//     const formData = {
+//         firstName: document.getElementById('first-name').value,
+//         surname: document.getElementById('surname').value,
+//         otherNames: document.getElementById('other-names').value,
+//         country: document.getElementById('country').value,
+//         email: document.getElementById('email').value,
+//         password: password,
+//         careerInterest: document.getElementById('career-interest').value,
+//         experienceLevel: document.getElementById('experience-level').value
+//     };
+
+//     alert(`Account creation attempted with:\n\nFirst Name: ${formData.firstName}\nSurname: ${formData.surname}\notherNames: ${formData.otherNames}\nCountry: ${formData.country}\nEmail: ${formData.email}\nCareer Interest: ${formData.careerInterest}\nExperience Level: ${formData.experienceLevel}\n\nPassword is valid.`);
+// });
 
 // Signup Form Submission
 signupForm.addEventListener('submit', function (e) {
@@ -120,7 +155,7 @@ signupForm.addEventListener('submit', function (e) {
     const formData = {
         firstName: document.getElementById('first-name').value,
         surname: document.getElementById('surname').value,
-        lastName: document.getElementById('last-name').value,
+        otherNames: document.getElementById('other-names').value,
         country: document.getElementById('country').value,
         email: document.getElementById('email').value,
         password: password,
@@ -128,7 +163,14 @@ signupForm.addEventListener('submit', function (e) {
         experienceLevel: document.getElementById('experience-level').value
     };
 
-    alert(`Account creation attempted with:\n\nFirst Name: ${formData.firstName}\nSurname: ${formData.surname}\nLast Name: ${formData.lastName}\nCountry: ${formData.country}\nEmail: ${formData.email}\nCareer Interest: ${formData.careerInterest}\nExperience Level: ${formData.experienceLevel}\n\nPassword is valid.`);
+    // Store user data in localStorage (optional, for demo purposes)
+    localStorage.setItem('currentUser', JSON.stringify(formData));
+
+    // Show success message and redirect to dashboard
+    alert('Account created successfully! Redirecting to your dashboard...');
+
+    // Redirect to dashboard page
+    window.location.href = 'dashboard.html';
 });
 
 // Initialize app
