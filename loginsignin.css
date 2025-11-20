@@ -200,7 +200,7 @@ body {
 .mobile-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
     right: 0;
     background: white;
     border-top: 1px solid #eee;
@@ -213,6 +213,7 @@ body {
 
 .mobile-menu.open {
     max-height: 400px;
+    width: 50%;
 }
 
 .mobile-menu .nav-links {

@@ -76,7 +76,7 @@
           /* z-index: 900; */
         }
 
-        /* .logo {
+         /*.logo {
           width: 40px;
           height: 40px;
           background: white;
@@ -93,7 +93,6 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           font-weight: 700;
-          font-size: 1.5em;
         }
 
         .profile {
@@ -184,7 +183,7 @@
         .mobile-menu {
           position: absolute;
           top: 100%;
-          left: 0;
+          left: 50%;
           right: 0;
           background: white;
           border-top: 1px solid #eee;
@@ -197,6 +196,7 @@
 
         .mobile-menu.open {
           max-height: 400px;
+          width: 50%;
         }
 
         .mobile-menu .nav-links {

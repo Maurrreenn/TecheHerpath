@@ -187,8 +187,8 @@ body {
 .mobile-menu {
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+  left: 50%;
+  right: 0; 
   background: white;
   border-top: 1px solid #eee;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
@@ -200,6 +200,7 @@ body {
 
 .mobile-menu.open {
   max-height: 400px;
+  width: 50%;
 }
 
 .mobile-menu .nav-links {
@@ -311,9 +312,9 @@ h3 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-.logo-welcome {
+/*.logo-welcome {
   width: 100px;
-}
+} */
 
 .welcome h2 {
   color: #6a5af9;

@@ -136,7 +136,6 @@ function showAnalyzingScreen() {
     }, 3000);
 }
 
-
 // INITIALIZE
 loadQuestion();
 updateProgress();
